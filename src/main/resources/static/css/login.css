@@ -1,0 +1,35 @@
+.login {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    height: 50vh;
+}
+.login form input:focus, .login form button:focus {
+   outline: none;
+}
+.login form input {
+    padding: 10px 20px;
+}
+.login form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    outline: none;
+}
+.login form button {
+    border: 1px solid black;
+    padding: 10px 20px;
+    background-color: white;
+    color: black;
+}
+.login form button:hover {
+    background-color: black;
+        border: 1px solid white;
+    color: white;
+}
+.login > a {
+    color: blue;
+    font-size: 12px;
+}

@@ -1,0 +1,28 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+li {
+    list-style: none;
+}
+a {
+    text-decoration: none;
+    color: black;
+}
+body {
+    max-width: 1280px;
+    padding: 0 40px 0 40px;
+    margin: 0 auto;
+    font-family: "Girloy", sans-serif;
+}
+@media (max-width: 1023px) {
+    body {
+        max-width: 1023px;
+    }
+}
+@media (max-width: 768px) {
+    body {
+        max-width: 768px;
+    }
+}

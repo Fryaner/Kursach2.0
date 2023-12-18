@@ -1,0 +1,35 @@
+.register {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    height: 50vh;
+}
+.register form input:focus, .login form button:focus {
+   outline: none;
+}
+.register form input {
+    padding: 10px 20px;
+}
+.register form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    outline: none;
+}
+.register form button {
+    border: 1px solid black;
+    padding: 10px 20px;
+    background-color: white;
+    color: black;
+}
+.register form button:hover {
+    background-color: black;
+        border: 1px solid white;
+    color: white;
+}
+.register > a {
+    color: blue;
+    font-size: 12px;
+}

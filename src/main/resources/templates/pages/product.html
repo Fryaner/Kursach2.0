@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="UTF-8">
+  <meta name="viewport"
+        content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <title>Товар</title>
+  <link href="../../static/css/style.css" th:href="@{/css/style.css}" type="text/css" rel="stylesheet">
+  <link href="../../static/css/header.css" th:href="@{/css/header.css}" type="text/css" rel="stylesheet">
+  <link href="../../static/css/font.css" th:href="@{/css/font.css}" type="text/css" rel="stylesheet">
+  <link href="../../static/css/product.css" th:href="@{/css/product.css}" type="text/css" rel="stylesheet">
+  <link href="../../static/css/footer.css" th:href="@{/css/footer.css}" type="text/css" rel="stylesheet">
+</head>
+<body>
+<header class="header" id="headerBurger">
+  <nav class="header__nav">
+    <div class="nav__logo">
+      <a th:href="@{index}"><img src="../../static/images/logotype.svg" th:src="@{images/logotype.svg}"></a>
+      <div class="logo__btn open" id="burgermenu">
+        <span></span>
+      </div>
+    </div>
+    <ul id="navigationBurger">
+      <li><a th:href="@{stock}">Акции</a></li>
+      <li><a th:href="@{contact}">Контакты</a></li>
+      <li><a th:href="@{whome}">О нас</a></li>
+    </ul>
+  </nav>
+  <div class="header__other" id="navigationBurger2">
+    <input type="search" name="search" placeholder="Поиск">
+    <a th:href="@{login}"><img src="../../static/images/auth.png" th:src="@{images/auth.png}"></a>
+    <p>Сумма:<span> 1999</span></p>
+  </div>
+</header>
+<main>
+  <section class="product">
+    <div class="product__buy">
+      <div class="but__image">
+        <img src="../../static/images/product1.png" th:src="@{images/product1.png}" alt="">
+      </div>
+      <div class="buy__info">
+        <div class="info__title">
+          <p>L’homme IDEAL Eau de parfum</p>
+          <p>Guerlain</p>
+        </div>
+        <div class="info__volume">
+          <a href="#">50 мл</a>
+          <a href="#">100 мл</a>
+        </div>
+        <p class="info__price">13 170 ₽</p>
+        <div class="info__add">
+          <a href="#">Добавить в корзину</a>
+            <span>есть в наличии</span>
+        </div>
+      </div>
+    </div>
+    <div class="product__info">
+      <div class="info__description">
+        <p>Описание</p>
+        <div class="description__model">
+          <p>GUERLAIN L'HOMME IDÉAL</p>
+          <p>артикул: 7753100005</p>
+        </div>
+        <p>Мужчина в реальной жизни не всегда идеален, но, к счастью, его аромат существует. В 2016 году Guerlain предлагает новое идеальное орудие соблазнения – совершенно неотразимый аромат L’HOMME IDÉAL Парфюмерная вода. Соблазнительно пряный миндаль в сочетании с аристократизмом бергамота придаёт этому восточному древесному аромату непреодолимый магнетизм. В эскорте – элегантная болгарская роза, пылкий ладан и знаменитая тинктура ванили – гордость Дома Guerlain. И наконец, в шлейфе – таинственный и захватывающий альянс нот кожи, бобов тонка и сандалового дерева.</p>
+      </div>
+      <div class="info__characteristic">
+        <p>Подробные характеристики</p>
+        <ul>
+          <li><span>Тип продукта.............................</span> Парфюмерная вода</li>
+          <li><span>Верхние ноты.............................</span> бергамот, миндаль</li>
+          <li><span>Ноты сердца..............................</span> пряные ноты, роза, ладан</li>
+          <li><span>Базовые ноты.............................</span> кожа, ваниль, бобы тонка, сандал</li>
+          <li><span>Пол..................................................</span> мужской</li>
+          <li><span>Для кого.........................................</span> для взрослых</li>
+        </ul>
+      </div>
+    </div>
+    <div>
+      <p>TODO: рейтинг и отзывы</p>
+    </div>
+  </section>
+</main>
+<footer class="footer">
+  <div class="footer_logo">
+    <a th:href="@{index}">
+      <img src="../../static/images/logotype.svg" th:src="@{images/logotype.svg}">
+      <p>ScentPepel</p>
+    </a>
+  </div>
+  <p>Интернет-магазин парфюмерии <br>
+    Все права защищены <br>
+    © ScentPepel, 2023 <br>
+  </p>
+  <nav class="footer__nav">
+    <ul>
+      <li><a th:href="@{stock}">Акции</a></li>
+    </ul>
+    <ul>
+      <li><a th:href="@{contact}">Контакты</a></li>
+      <li><a th:href="@{whome}">О нас</a></li>
+    </ul>
+  </nav>
+  <div class="footer__contact">
+    <p>+7 999 111-22-33</p>
+    <p>info@scentpepel.com</p>
+  </div>
+</footer>
+<script src="../../static/js/script.js"></script>
+</body>
+</html>

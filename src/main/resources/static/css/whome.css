@@ -1,0 +1,15 @@
+.whome {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    gap:12px;
+    height: 50vh;
+    justify-content: center;
+}
+.whome h1 {
+    font-size: 32px;
+    color: #6D6D6D;
+}
+.whome p {
+    font-size: 24px;
+}

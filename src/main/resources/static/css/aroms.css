@@ -1,0 +1,63 @@
+.aromas {
+    padding: 48px 0 72px 0;
+    display: flex;
+}
+.aroms__item {
+    height: 312px;
+    width: 100%;
+}
+.aroms__item:nth-child(1) {
+    background-image: url("../images/Wooman.jpg");
+    background-size: cover;
+}
+.aroms__item:nth-child(2) {
+    background-image: url("../images/Man.jpg");
+    background-size: cover;
+}
+.aroms__item:nth-child(3) {
+    background-image: url("../images/Uni.jpg");
+    background-size: 100%  100%;
+}
+.aroms__item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-end;
+    gap: 72px;
+    padding: 0 10px 24px 10px;
+}
+.aroms__item h1{
+    font-size: 32px;
+    color: white;
+    font-weight: 100;
+}
+.aroms__item a {
+    border: 1px solid white;
+    border-radius: 50%;
+    padding: 20px;
+    background-image: url("../images/Arrow1.svg");
+    transition: 0.5s;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.aroms__item a:hover {
+    background-color: white;
+    border: 1px solid black;
+    transition: 0.5s;
+    background-image: url("../images/blackArrow.svg");
+}
+@media (max-width: 1023px) {
+    .aroms__item h1{
+        font-size: 24px;
+    }
+}
+@media (max-width: 768px) {
+    .aroms__item h1{
+        font-size: 20px;
+    }
+}
+@media (max-width: 656px) {
+    .aromas {
+        flex-wrap: wrap;
+    }
+}

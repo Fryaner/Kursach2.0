@@ -1,0 +1,281 @@
+<!doctype html>
+<html lang="ru" xmlns:th="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="../../static/css/style.css" th:href="@{/css/style.css}" type="text/css" rel="stylesheet">
+    <link href="../../static/css/header.css" th:href="@{/css/header.css}" type="text/css" rel="stylesheet">
+    <link href="../../static/css/aroms.css" th:href="@{/css/aroms.css}" type="text/css" rel="stylesheet">
+    <link href="../../static/css/popular.css" th:href="@{/css/popular.css}" type="text/css" rel="stylesheet">
+    <link href="../../static/css/font.css" th:href="@{/css/font.css}" type="text/css" rel="stylesheet">
+    <link href="../../static/css/new.css" th:href="@{/css/new.css}" type="text/css" rel="stylesheet">
+    <link href="../../static/css/footer.css" th:href="@{/css/footer.css}" type="text/css" rel="stylesheet">
+    <link href="../../static/css/itc-slider.css" th:href="@{/css/itc-slider.css}" rel="stylesheet">
+    <script defer src="../../static/js/itc-slider.js" th:src="@{js/itc-slider.js}"></script>
+    <title>Главная страница</title>
+</head>
+<body>
+<header class="header" id="headerBurger">
+    <nav class="header__nav">
+        <div class="nav__logo">
+            <a th:href="@{index}"><img src="../../static/images/logotype.svg" th:src="@{images/logotype.svg}"></a>
+            <div class="logo__btn open" id="burgermenu">
+                <span></span>
+            </div>
+        </div>
+        <ul id="navigationBurger">
+            <li><a th:href="@{stock}">Акции</a></li>
+            <li><a th:href="@{contact}">Контакты</a></li>
+            <li><a th:href="@{whome}">О нас</a></li>
+        </ul>
+    </nav>
+    <div class="header__other" id="navigationBurger2">
+        <input type="search" name="search" placeholder="Поиск">
+        <a th:href="@{login}"><img src="../../static/images/auth.png" th:src="@{images/auth.png}"></a>
+        <p>Сумма:<span> 1999</span></p>
+    </div>
+</header>
+<main class="main">
+    <section class="itc-slider itc-slider-2" data-autoplay="false" data-loop="true" data-slider="itc-slider">
+        <div class="itc-slider-wrapper">
+            <div class="itc-slider-items">
+                <div class="itc-slider-item">
+                    <a href="#"><img alt="" src="../../static/images/4.jpg" th:src="@{images/4.jpg}" width="100%" ></a>
+                    <div>
+                        <p>Новый аромат <br>Ganymede Marc-Antoine Barrois <br>уже в продаже</p>
+                        <a href="#">Перейти в каталог</a>
+                    </div>
+                </div>
+                <div class="itc-slider-item">
+                    <a href="#"><img alt="" src="../../static/images/2.jpeg" th:src="@{images/2.jpeg}" width="100%"></a>
+                </div>
+                <div class="itc-slider-item">
+                    <a href="#"><img alt="" src="../../static/images/3.jpg" th:src="@{images/3.jpg}" width="100%"></a>
+                </div>
+                <div class="itc-slider-item">
+                    <a href="#"><img alt="" src="../../static/images/1.jpeg" th:src="@{images/1.jpeg}" width="100%"></a>
+                </div>
+            </div>
+        </div>
+        <button class="itc-slider-btn itc-slider-btn-prev"></button>
+        <button class="itc-slider-btn itc-slider-btn-next"></button>
+        <ol class="itc-slider-indicators">
+            <li class="itc-slider-indicator" data-slide-to="0"></li>
+            <li class="itc-slider-indicator" data-slide-to="1"></li>
+            <li class="itc-slider-indicator" data-slide-to="2"></li>
+            <li class="itc-slider-indicator" data-slide-to="3"></li>
+        </ol>
+    </section>
+    <section class="aromas">
+        <div class="aroms__item">
+            <h1>Женские ароматы</h1>
+            <a href="#"></a>
+        </div>
+        <div class="aroms__item">
+            <h1>Унисекс</h1>
+            <a href="#"></a>
+        </div>
+        <div class="aroms__item">
+            <h1>Мужские ароматы</h1>
+            <a href="#"></a>
+        </div>
+    </section>
+    <section class="popular">
+            <div class="popular__title">
+                <h2>Популярные ароматы</h2>
+                <div class="title__tabs">
+                    <a href="#" class="" data-gendr="#woman">Женские</a>
+                    <a href="#" class="active" data-gendr="#man">Мужские</a>
+                    <a href="#" class=""data-gendr="#uni">Унисекс</a>
+                </div>
+            </div>
+            <div class="popular__items active" id="man">
+                <div class="items__item">
+                    <a th:href="@{product}">
+                        <img src="../../static/images/popular1.png" th:src="@{images/popular1.png}" alt="">
+                        <p>DIOR</p>
+                        <p>Sauvage</p>
+                        <p>от 8 990 ₽</p>
+                    </a>
+                    <a class="item__add" href="product.html">Добавить</a>
+                </div>
+                <div class="items__item">
+                    <a th:href="@{product}">
+                        <img src="../../static/images/popular1.png" th:src="@{images/popular1.png}" alt="">
+                        <p>Giorgio Armani</p>
+                        <p>Acqua Di Gio</p>
+                        <p>от 8 990 ₽</p>
+                    </a>
+                    <a href="#" class="item__add">Добавить</a>
+                </div>
+                 <div class="items__item">
+                     <a th:href="@{product}">
+                        <img src="../../static/images/popular1.png" th:src="@{images/popular1.png}" alt="">
+                        <p>YVES SAINT LAURENT</p>
+                        <p>La Nuit de L’Homme</p>
+                        <p>от 8 990 ₽</p>
+                     </a>
+                     <a href="#" class="item__add">Добавить</a>
+                </div>
+                <div class="items__item">
+                    <a th:href="@{product}">
+                        <img src="../../static/images/popular1.png" th:src="@{images/popular1.png}" alt="">
+                        <p>Creed</p>
+                        <p>Aventus</p>
+                        <p>от 8 990 ₽</p>
+                    </a>
+                    <a href="#" class="item__add">Добавить</a>
+                </div>
+            </div>
+        <div class="popular__items" id="woman">
+            <div class="items__item">
+                <a th:href="@{product}">
+                    <img src="../../static/images/popular2.png" th:src="@{images/popular2.png}" alt="">
+                    <p>DIOR</p>
+                    <p>Sauvage</p>
+                    <p>от 9 990 ₽</p>
+                </a>
+                <a href="#" class="item__add">Добавить</a>
+            </div>
+            <div class="items__item">
+                <a th:href="@{product}">
+                    <img src="../../static/images/popular2.png" th:src="@{images/popular2.png}" alt="">
+                    <p>Giorgio Armani</p>
+                    <p>Acqua Di Gio</p>
+                    <p>от 8 990 ₽</p>
+                </a>
+                <a href="#" class="item__add">Добавить</a>
+            </div>
+            <div class="items__item">
+                <a th:href="@{product}">
+                    <img src="../../static/images/popular2.png" th:src="@{images/popular2.png}" alt="">
+                    <p>YVES SAINT LAURENT</p>
+                    <p>La Nuit de L’Homme</p>
+                    <p>от 8 990 ₽</p>
+                </a>
+                <a href="#" class="item__add">Добавить</a>
+            </div>
+            <div class="items__item">
+                <a th:href="@{product}">
+                    <img src="../../static/images/popular2.png" th:src="@{images/popular2.png}" alt="">
+                    <p>Creed</p>
+                    <p>Aventus</p>
+                    <p>от 8 990 ₽</p>
+                </a>
+                <a href="#" class="item__add">Добавить</a>
+            </div>
+        </div>
+        <div class="popular__items" id="uni">
+            <div class="items__item">
+                <a th:href="@{product}">
+                    <img src="../../static/images/popular3.png" th:src="@{images/popular3.png}" alt="">
+                    <p>DIOR</p>
+                    <p>Sauvage</p>
+                    <p>от 8 990 ₽</p>
+                </a>
+                <a href="#" class="item__add">Добавить</a>
+            </div>
+            <div class="items__item">
+                <a th:href="@{product}">
+                    <img src="../../static/images/popular3.png" th:src="@{images/popular3.png}" alt="">
+                    <p>Giorgio Armani</p>
+                    <p>Acqua Di Gio</p>
+                    <p>от 10 990 ₽</p>
+                </a>
+                <a href="#" class="item__add">Добавить</a>
+            </div>
+            <div class="items__item">
+                <a th:href="@{product}">
+                    <img src="../../static/images/popular3.png" th:src="@{images/popular3.png}" alt="">
+                    <p>YVES SAINT LAURENT</p>
+                    <p>La Nuit de L’Homme</p>
+                    <p>от 8 990 ₽</p>
+                </a>
+                <a href="#" class="item__add">Добавить</a>
+            </div>
+            <div class="items__item">
+                <a th:href="@{product}">
+                    <img src="../../static/images/popular3.png" th:src="@{images/popular3.png}" alt="">
+                    <p>Creed</p>
+                    <p>Aventus</p>
+                    <p>от 8 990 ₽</p>
+                </a>
+                <a href="#" class="item__add">Добавить</a>
+            </div>
+        </div>
+    </section>
+    <section class="new">
+        <h2>Новинки</h2>
+        <div class="new__items">
+            <div class="items__item">
+                <a th:href="@{product}">
+                    <img src="../../static/images/popular1.png" th:src="@{images/popular1.png}" alt="">
+                    <p>DIOR</p>
+                    <p>Sauvage</p>
+                    <p>от 8 990 ₽</p>
+                </a>
+                <a href="#" class="item__add">Добавить</a>
+            </div>
+            <div class="items__item">
+                <a th:href="@{product}">
+                <img src="../../static/images/popular2.png" th:src="@{images/popular2.png}" alt="">
+                <p>Giorgio Armani</p>
+                <p>Acqua Di Gio</p>
+                <p>от 8 990 ₽</p>
+                </a>
+                <a href="#" class="item__add">Добавить</a>
+            </div>
+            <div class="items__item">
+                <a th:href="@{product}">
+                <img src="../../static/images/popular3.png" th:src="@{images/popular3.png}" alt="">
+                <p>YVES SAINT LAURENT</p>
+                <p>La Nuit de L’Homme</p>
+                <p>от 0000000 ₽</p>
+                </a>
+                <a href="#" class="item__add">Добавить</a>
+            </div>
+            <div class="items__item">
+                <a th:href="@{product}">
+                <img src="../../static/images/popular4.png" th:src="@{images/popular4.png}" alt="">
+                <p>Creed</p>
+                <p>Aventus</p>
+                <p>от 8 990 ₽</p>
+                </a>
+                <a href="#" class="item__add">Добавить</a>
+            </div>
+        </div>
+        <div class="new__btnCatalog">
+            <a th:href="@{catalog}">Полный каталог</a>
+        </div>
+    </section>
+</main>
+<footer class="footer">
+    <div class="footer_logo">
+        <a th:href="@{index}">
+            <img src="../../static/images/logotype.svg" th:src="@{images/logotype.svg}">
+            <p>ScentPepel</p>
+        </a>
+    </div>
+    <p>Интернет-магазин парфюмерии <br>
+        Все права защищены <br>
+        © ScentPepel, 2023 <br>
+    </p>
+    <nav class="footer__nav">
+        <ul>
+            <li><a th:href="@{stock}">Акции</a></li>
+        </ul>
+        <ul>
+            <li><a th:href="@{contact}">Контакты</a></li>
+            <li><a th:href="@{whome}">О нас</a></li>
+        </ul>
+    </nav>
+    <div class="footer__contact">
+        <p>+7 999 111-22-33</p>
+        <p>info@scentpepel.com</p>
+    </div>
+</footer>
+<script src="../../static/js/script.js" th:src="@{js/script.js}"></script>
+</body>
+</html>

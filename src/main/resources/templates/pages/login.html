@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.w3.org/1999/xhtml">
+<head>
+  <meta charset="UTF-8">
+  <title>Title</title>
+  <meta charset="UTF-8">
+  <meta name="viewport"
+        content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+  <title>Товар</title>
+  <link href="../../static/css/style.css" th:href="@{/css/style.css}" type="text/css" rel="stylesheet">
+  <link href="../../static/css/header.css" th:href="@{/css/header.css}" type="text/css" rel="stylesheet">
+  <link href="../../static/css/font.css" th:href="@{/css/font.css}" type="text/css" rel="stylesheet">
+  <link href="../../static/css/whome.css" th:href="@{/css/login.css}" type="text/css" rel="stylesheet">
+  <link href="../../static/css/footer.css" th:href="@{/css/footer.css}" type="text/css" rel="stylesheet">
+</head>
+<body>
+<header class="header" id="headerBurger">
+  <nav class="header__nav">
+    <div class="nav__logo">
+      <a th:href="@{index}"><img src="../../static/images/logotype.svg" th:src="@{images/logotype.svg}"></a>
+      <div class="logo__btn open" id="burgermenu">
+        <span></span>
+      </div>
+    </div>
+    <ul id="navigationBurger">
+      <li><a th:href="@{stock}">Акции</a></li>
+      <li><a th:href="@{contact}">Контакты</a></li>
+      <li><a th:href="@{whome}">О нас</a></li>
+    </ul>
+  </nav>
+  <div class="header__other" id="navigationBurger2">
+    <input type="search" name="search" placeholder="Поиск">
+    <a th:href="@{login}"><img src="../../static/images/auth.png" th:src="@{images/auth.png}"></a>
+    <p>Сумма:<span> 1999</span></p>
+  </div>
+</header>
+<main>
+  <section class="login">
+    <h1>Вход в систему</h1>
+    <div th:if="${param.error}">
+      Данный логин и пароль не найдены.</div>
+    <div th:if="${param.logout}">
+      You have been logged out.</div>
+    <form th:action="@{/login}" method="post">
+      <div>
+        <input type="text" name="username" placeholder="имя пользователя"/>
+      </div>
+      <div>
+        <input type="password" name="password" placeholder="пароль"/>
+      </div>
+      <button>Войти</button>
+    </form>
+    <a th:href="@{register}">Зарегистрироваться</a>
+  </section>
+</main>
+<footer class="footer">
+  <div class="footer_logo">
+    <a th:href="@{index}">
+      <img src="../../static/images/logotype.svg" th:src="@{images/logotype.svg}">
+      <p>ScentPepel</p>
+    </a>
+  </div>
+  <p>Интернет-магазин парфюмерии <br>
+    Все права защищены <br>
+    © ScentPepel, 2023 <br>
+  </p>
+  <nav class="footer__nav">
+    <ul>
+      <li><a th:href="@{stock}">Акции</a></li>
+    </ul>
+    <ul>
+      <li><a th:href="@{contact}">Контакты</a></li>
+      <li><a th:href="@{whome}">О нас</a></li>
+    </ul>
+  </nav>
+  <div class="footer__contact">
+    <p>+7 999 111-22-33</p>
+    <p>info@scentpepel.com</p>
+  </div>
+</footer>
+<script src="../../static/js/script.js" th:src="@{js/script.js}"></script>
+</body>
+</html>

@@ -1,0 +1,20 @@
+.contact {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    justify-content: center;
+    height: 50vh;
+    text-align: center;
+}
+.contact h1 {
+    font-size: 32px;
+    color: #6D6D6D;
+}
+.contact ul {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+.contact li {
+    font-size: 24px;
+}

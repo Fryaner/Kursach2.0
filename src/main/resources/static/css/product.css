@@ -1,0 +1,137 @@
+.product {
+    display: flex;
+    flex-direction: column;
+    gap: 47px;
+    padding: 59px 0;
+}
+.product__buy {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.product__buy img {
+    width: 100%;
+}
+.buy__info {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+.info__title {
+    font-size: 24px;
+}
+.info__title p:nth-child(1) {
+    font-weight: 500;
+}
+.info__title p:nth-child(2) {
+    color: #6D6D6D;
+}
+.info__volume {
+    display: flex;
+    gap: 19px;
+}
+.info__volume a {
+    font-size: 14px;
+    border: 1px solid black;
+}
+.info__volume a:nth-child(1) {
+    padding: 10px 19px;
+}
+.info__volume a:nth-child(2) {
+    padding: 10px 16px;
+}
+.info__volume a:hover {
+    border: 1px solid #6D6D6D;
+    color: #6D6D6D;
+}
+.info__price {
+    font-size: 24px;
+    font-weight: 500;
+}
+.info__add {
+    display: flex;
+    flex-direction: column-reverse;
+    gap: 16px;
+    align-items: flex-start;
+}
+.info__add a {
+    padding: 10px 21px;
+    background-color: #2E2E2E;
+    color: white;
+}
+.info__add span {
+    color: #6D6D6D;
+}
+.product__info {
+    display: flex;
+    justify-content: space-between;
+    gap: 87px;
+}
+.info__description {
+    display: flex;
+    flex-direction: column;
+    gap: 13px;
+    flex: 1;
+    text-align: justify;
+}
+.info__description > p:nth-child(1), .info__characteristic p{
+    font-size: 14px;
+    font-weight: 500;
+}
+.description__model {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+.info__characteristic {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    flex: 1;
+}
+.info__characteristic ul {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.info__characteristic li {
+    font-size: 14px;
+}
+.info__characteristic span {
+    color: #6D6D6D;
+}
+@media (max-width: 1023px) {
+    .info__title {
+        font-size: 20px;
+    }
+    .info__volume a {
+        font-size: 10px;
+        border: 1px solid black;
+    }
+    .info__add {
+        font-size: 14px;
+    }
+}
+@media (max-width: 768px) {
+    .buy__info {
+        align-items: center;
+        text-align: center;
+    }
+    .product__info {
+        flex-direction: column;
+    }
+    .product__info {
+    }
+    .info__description p:last-child {
+        text-align: justify;
+    }
+    .product__buy {
+        flex-direction: column;
+    }
+    .info__add {
+        align-items: center;
+    }
+    .product__info {
+        gap: 50px;
+    }
+}
